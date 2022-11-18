@@ -1,0 +1,17 @@
+<meta charset="uft-8"/>
+<script>
+  
+  let pass = ""
+  for (let i = 0; i < 6; i++){
+    pass += Math.round(Math.random()*9)
+    }
+  for(;;){
+    let tk = prompt("请输入密码")
+    if(tk == pass){
+      alert("密码正确")
+      }else{
+        alert("密码错误，请从新输入")
+        tk = prompt("请输入密码")
+        }
+    }
+</script>
